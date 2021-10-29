@@ -1,0 +1,21 @@
+.navigation ul{
+    width: 20%;
+    max-width: 95%;
+    margin: 1.2rem auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    list-style: none;
+    
+}
+
+
+
+.navigation a{
+    text-decoration: none;
+    color:black
+}
+
+a.active{
+    color: gold;
+}

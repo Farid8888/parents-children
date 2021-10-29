@@ -1,0 +1,51 @@
+.children{
+    width: 40rem;
+    max-width: 95%;
+    margin: 5rem auto;
+    box-shadow: 2px 2px 8px black;
+    border-radius: 7px;
+    padding: 5rem 2rem;
+}
+
+.control{
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    margin: auto;
+}
+
+.children div{
+    margin-bottom: 15px;
+}
+
+div label{
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+div input{
+    border:1px solid rgb(221, 213, 213);
+    border-radius: 4px;
+    padding: 5px 8px;
+}
+
+.btn{
+    text-align: end;
+    width: 50%;
+    margin: auto;
+}
+
+.btn button{
+    color:rgb(12, 194, 240);
+    background-color: inherit;
+    border:1px solid rgb(12, 194, 240);
+    border-radius: 2rem;
+    padding: 7px 10px;
+    cursor: pointer;
+    font-size: 1.2rem;
+}
+
+.btn button:hover,
+.btn button:active{
+    background-color: lavender;
+}
