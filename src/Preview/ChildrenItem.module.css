@@ -1,0 +1,14 @@
+.children{
+    margin-top: 1.2rem;
+    display: flex;
+    flex-direction: row;
+}
+
+.children p{
+    background-color: rgb(248, 240, 240);
+    color: black;
+    padding: 10px;
+    border-radius: 7px;
+    text-align: center;
+    font-weight: bold;
+}

@@ -68,3 +68,37 @@
 .btn2:hover{
     background-color: rgb(5, 78, 121);
 }
+
+
+p{
+    margin: 0;   
+   }
+   
+   .childrenItem{
+       margin-top: 1.2rem;
+   }
+   
+   .child{
+       display: flex;
+       flex-direction: row;
+       justify-content: space-between;
+       align-items: center;
+   }
+   .child input{
+       width: 14rem;
+       margin-right: 10px;
+       max-width: 40%;
+   }
+  
+   
+   .btn3 button{
+       color:rgb(12, 194, 240);
+       background-color: inherit;
+       border:1px solid rgb(12, 194, 240);
+       border-radius: 2rem;
+       cursor: pointer;
+   }
+   
+   .btn3 button:hover{
+       background-color: lavender;
+   }

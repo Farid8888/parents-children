@@ -2,7 +2,7 @@ import {Route,Switch,Redirect} from 'react-router-dom'
 import Layout from './Layout/Layout';
 import ParentForm from './Forms/ParentForm';
 import Preview from './Preview/Preview';
-import ChildenForm from './Forms/ChildrenForm';
+
 
 function App() {
   return (

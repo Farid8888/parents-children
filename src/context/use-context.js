@@ -1,53 +1,27 @@
-import {createContext,useState,useEffect} from 'react'
+import {createContext,useState} from 'react'
 
 
 
 export const infoContext =createContext({
-    children:[],
-    addChildren:(child)=>{},
-    removeItems:(childr,inx)=>{},
-    addItems:(items)=>{},
-    items:[],
-    addPreview:(pr)=>{},
-    preview:[]
+    info:[],
+    addInfo:(info)=>{},
 })
 
 
 
 const ContextProvider=(props)=>{
-  const [effect,setEffect] = useState(false)  
-  const [children,setChildren] = useState([])
-  const [preview,setPreview] = useState([])
-  const [items,setItems] =useState([])
-
-  const addHandler=(child)=>{
-      setChildren(prevst=>{
-          return prevst.concat(child)
+  
+  const [info,setInfo] = useState([])
+  
+  const addInfo=(info)=>{
+      setInfo(prevst=>{
+          return prevst.concat(info)
       })
   }
 
-  const removeHandler =(index)=>{
-      const newChildren =children
-      newChildren.splice(index,1)
-      setChildren(newChildren)
-      setEffect(prevst=>!prevst)
-  }
-  const addItems =(items)=>{
-      setItems(prevst=>{
-          return prevst.concat(items)
-      })
-  }
-
-  const addPreview =(preview)=>{
-    setPreview(prevst=>{
-        return prevst.concat(preview)
-    })
-  }
-
-  useEffect(()=>{
-  },[effect])
+ 
     return(
-        <infoContext.Provider value={{children:children,addChildren:addHandler,removeItems:removeHandler,addItems:addItems,items:items,addPreview:addPreview,preview:preview}}>
+        <infoContext.Provider value={{info:info,addInfo:addInfo}}>
            {props.children}
         </infoContext.Provider>
     )

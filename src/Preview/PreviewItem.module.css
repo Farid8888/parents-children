@@ -1,0 +1,16 @@
+.previewItem {
+  font-weight: bold;
+  margin-top: 20px;
+}
+
+
+.main{
+    margin-top: 2rem;
+    border-bottom: 1px solid black;
+    padding-bottom: 30px;
+}
+
+
+.control{
+    margin-top: 5rem;
+}
