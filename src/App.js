@@ -11,9 +11,6 @@ function App() {
      <Route path='/main'>
        <ParentForm/>
      </Route>
-     <Route path='/children'>
-       <ChildenForm/>
-     </Route>
      <Route path='/preview'>
         <Preview/>
      </Route>
