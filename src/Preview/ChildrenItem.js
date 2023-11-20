@@ -1,7 +1,6 @@
 import classes from './ChildrenItem.module.css'
 
 
-
 const ChildrenItem =(props)=>{
     let age
     if(props.age === '1'){
